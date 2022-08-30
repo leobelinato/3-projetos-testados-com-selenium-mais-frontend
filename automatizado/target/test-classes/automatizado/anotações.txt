@@ -1,0 +1,91 @@
+COPIA E COLA  NO  CMD
+mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart
+
+GROUDIP, COMOS  E FOSSE O  DOMÍNIO:
+br.com.leonardo
+
+ARTEFATO ID: (NOME DO PROJETO)
+automatizado
+
+
+VERSÃO:
+ENTER
+
+PACKAGE: (PACOTE, inicial, pasta inicial, mesma coisa que o  nome do projeto):
+
+
+
+
+
+
+Passo a passo para criação de testes automatizados
+
+
+- Instalar chrome driver
+- instalar Selenium webdriver
+
+
+Estruturando testes automatizados:
+
+
+1° Estruturar a PageObject de login.
+    1.1 Criar um arquivo chamado LoginPO.java dentro da pasta page. -OK
+    1.2 Fazer herança do arquivo BasePO.java. - OK
+    1.3 Fazer o mapeamento de todos os elementos da tela de login. - OK
+        -email
+        -senha
+        -botao
+        -mensagem
+
+        1.3.1 Criar os elementos com pageFactory  - OK
+
+2° Estruturar o arquivo de testes de login
+    2.1 Criar um arquivo chamdo LoginTest.java dentro da pasta Test. - OK
+    2.2 Fazer a herança do arquivo BaseTest.java - OK
+    2.3 Criar um método inicial que saiba instanciar um PO de login. - OK
+    2.4 Criar os testes baseados na Planilha
+        2.4.1 Não deve logar no sistema com usuario e senha vazios
+        2.4.2 - OK
+        2.4.3 - OK
+        2.4.4 - OK
+        2.4.5 - OK
+        2.4.6 - OK
+        2.4.7 - OK
+
+
+
+
+========= WEB ELEMENTS  =========
+
+3 FORMAS DE CAPTURAR 
+
+- XPATH
+- QUERY SELECTOR
+- TAG
+
+0 0 0
+100
+
+tag: h2, button, div - 1 ponto
+classe: .container .alert - 10 pontos
+Id: #btn-adicionar - 100pontos
+
+exemplo:
+
+<button id="btn-entrar" class="btn-primary">Entrar</button>
+
+posso capturar o botão a cima pelo ID, ou class ou pela tag button.
+
+outra forma seria:
+button  - 1 ponto
+
+.btn-primary - 10
+
+button.btn-primary - 11 pontos
+
+btn-entrar - 100 ponto -> essa é o mais facil de encontrar, mas as vezes pode faltar o ID
+
+
+
+
+
